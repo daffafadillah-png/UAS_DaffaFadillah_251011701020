@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Karsa Creative</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" alt="Logo" style="height: 40px;">
+            <span>Karsa Creative</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="transaksi.html">Booking</a></li>
+                <li><a href="login.html" class="login-btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="login-container fade-section visible" style="max-width: 400px; margin: 50px auto; padding: 40px; background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); text-align: center;">
+            <h2>Welcome Back</h2>
+            <p>Silakan login untuk memesan jasa</p>
+            
+            <form id="loginForm" style="margin-top: 20px;">
+                <div class="form-group" style="text-align: left; margin-bottom: 15px;">
+                    <label style="display: block; margin-bottom: 5px;">Username</label>
+                    <input type="text" id="username" placeholder="Masukkan username" style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid #ddd;">
+                </div>
+                
+                <div class="form-group" style="text-align: left; margin-bottom: 25px;">
+                    <label style="display: block; margin-bottom: 5px;">Password</label>
+                    <input type="password" id="password" placeholder="Masukkan password" style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid #ddd;">
+                </div>
+                
+                <button type="button" onclick="prosesLogin()" class="btn-main" style="width: 100%; border: none; cursor: pointer;">Masuk</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

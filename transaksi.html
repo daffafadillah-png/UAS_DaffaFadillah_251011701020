@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Transaksi Jasa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" alt="Logo" style="height: 40px;">
+            <span>Karsa Creative</span></div>
+        <nav>
+            <ul>
+               <li><a href="index.html">Beranda</a></li>
+                <li><a href="index.html#profil">Profil</a></li>
+                <li><a href="transaksi.html">Booking</a></li>
+                <li><a href="login.html" class="login-btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <center><h2>Isi kebutuhan jasamu disini!</h2></center>
+        <div style="background: var(--bg-light); padding: 30px; border-radius: 15px; margin-bottom: 40px;">
+          <form id="formTransaksi">
+    <input type="text" id="namaUser" placeholder="Nama Pengguna">
+    <input type="text" id="namaProjek" placeholder="Nama Projek">
+    <select id="kategori">
+        <option value="">Pilih Kategori</option>
+        <option value="Fotografi">Fotografi</option>
+        <option value="Videografi">Videografi</option>
+        <option value="Desain 3D">Desain 3D</option>
+    </select>
+    <input type="number" id="durasi" placeholder="Durasi (Jam)">
+    
+    <button type="button" onclick="simpanTransaksi()" class="btn-main">Kirim</button>
+</form>
+
+<table id="tabelTransaksi">
+    <thead>
+        <tr>
+            <th>Nama Pengguna</th>
+            <th>Projek</th>
+            <th>Kategori</th>
+            <th>Durasi</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
